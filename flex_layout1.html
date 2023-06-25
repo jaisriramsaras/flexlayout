@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex_layout1</title>
+    <style>
+        html,
+body {
+  height: 100%;
+  margin: 0
+}
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.box .row {
+  border: 1px dotted grey;
+  flex: 0 1 30px;
+}
+
+.box header.row {
+  flex: 0 1 auto;
+}
+
+.box main.row {
+  flex: 1 1 auto;
+}
+
+.box footer.row {
+  flex: 0 1 40px;
+}
+    </style>
+</head>
+<body>
+    <div class="box">
+  
+        <header class="row">
+          <p><b>header</b>
+            <br />
+            <br />(sized to content)</p>
+        </header>
+        
+        <main class="row">
+          <p>
+            <b>content</b>
+            (fills remaining space)
+          </p>
+        </main>
+        
+        <footer class="row">
+          <p><b>footer</b> (fixed height)</p>
+        </footer>
+        
+      </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex_layout 5</title>
+    <style >
+        html,
+body {
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+}
+.header,
+.footer {
+  flex: 0 0 auto;
+  background: #000;
+  color: #808080;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.content {
+  flex: 1 1 auto;
+  overflow: auto;
+  background: #ff0;
+  padding: 1rem;
+}
+p {
+  margin-top: 0;
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        Header
+      </header>
+      
+      <main class="content">
+        <h1>
+          Boudin tail pork belly andouille.
+        </h1>
+      
+        <p>
+          Bacon ipsum dolor amet ground round t-bone tri-tip andouille ham hock, pork belly cupim cow shank sirloin chuck salami. Shankle tongue pork frankfurter, beef ribs hamburger flank t-bone shank. Pork chop spare ribs meatball pork loin frankfurter picanha tenderloin chicken filet mignon. Boudin tail pork belly andouille.
+        </p>
+      
+        <h2>
+          Shankle tongue pork frankfurter
+        </h2>
+        
+        <p>
+          Leberkas bresaola short ribs hamburger. Bresaola alcatra shankle cow ham. Turkey shankle beef, prosciutto tenderloin pancetta biltong bresaola meatball boudin short ribs chicken bacon jowl turducken. Hamburger pig pork t-bone salami pork loin.
+        </p>
+        
+        <p>
+          Kielbasa rump porchetta, strip steak spare ribs ham beef sirloin. Kevin bacon pork belly filet mignon short loin. Meatball bacon filet mignon, ground round frankfurter turkey drumstick cupim. Hamburger salami tri-tip jowl, drumstick spare ribs pork loin rump. Bacon tenderloin tri-tip hamburger alcatra shankle frankfurter.
+        </p>
+      
+        <p>
+          Boudin frankfurter andouille pancetta tri-tip swine shank t-bone turducken. Meatball bacon bresaola, kielbasa landjaeger shoulder salami kevin jerky sausage doner fatback venison. Shank flank ham, leberkas brisket drumstick pastrami boudin. Prosciutto alcatra leberkas pork belly shoulder cow picanha sirloin beef ribs pork loin. Ground round tenderloin filet mignon alcatra jerky shankle brisket tongue beef ribs tri-tip short ribs short loin ribeye. Kevin flank sirloin, alcatra ribeye spare ribs tri-tip.
+        </p>
+      </main>
+      
+      <footer class="footer">
+        Footer
+      </footer>
+</body>
+</html>

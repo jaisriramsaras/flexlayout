@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex_layout 6  </title>
+    <style >
+        html, body {
+  height: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+header, footer {
+  flex: 0 1 auto;
+}
+main {
+  flex: 1;
+  overflow: scroll;
+  -webkit-overflow-scrolling:touch;
+}
+
+
+/* Not our focus */
+header, footer {
+  background: SLATEGREY;
+  color: SNOW;
+  padding: 0.5em;
+}
+main {
+  padding: 0.5em;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+          Header goes here.
+        </header>
+        <main>
+          <p>Main content.</p><p>Main content.</p><p>Main content.</p><p>Main content.</p><p>Main content.</p><p>Main content.</p><p>Main content.</p><p>Main content.</p><p>Main content.</p><p>Main content.</p><p>Main content.</p><p>Main content.</p><p>Main content.</p><p>Main content.</p><p>Main content.</p><p>Main content.</p><p>Main content.</p><p>Main content.</p>
+        </main>
+        <footer>
+          Footer goes here.
+        </footer>
+      </div>
+</body>
+</html>
